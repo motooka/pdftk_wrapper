@@ -95,8 +95,8 @@ $resultArray = [
 	'sourceClientPath' => $sourceClientPath,
 	'sourceSize' => $fileInfo['size'],
 	'sourceMD5' => $sourceMD5,
-	'resultURL_relative' => $downloadURL_relative,
-	'resultURL' => $downloadURL_absolute,
+	'downloadURL_relative' => $downloadURL_relative,
+	'downloadURL_absolute' => $downloadURL_absolute,
 	'resultSize' => $resultSize,
 	'resultMD5' => $resultMD5,
 ];
