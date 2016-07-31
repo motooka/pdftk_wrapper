@@ -1,0 +1,5 @@
+/webserver/tmp/*
+!/webserver/tmp/.htaccess
+!/webserver/tmp/index.html
+
+/.idea

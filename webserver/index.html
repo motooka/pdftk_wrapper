@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>pdftk Web Wrapper</title>
+<style type="text/css">
+	h2 {
+		margin: 30px 0px 2px 0px;
+	}
+	form {
+		margin: 24px;
+	}
+	#console {
+		width: calc(100% - 22px);
+		height: 160px;
+		margin: 4px 10px 10px 10px;
+		border: 1px solid #c0c0c0;
+		orverflow-y: scroll;
+	}
+	#console > div {
+		width: calc(100% - 8px);
+		margin: 0px 0px 4px 0px;
+		padding: 0px 4px 4px 4px;
+		border-top: none;
+		border-bottom: 1px solid #f0f0f0;
+		font-size: 12pt;
+		font-family: monospace;;
+	}
+</style>
+</head>
+<body>
+<h1>pdftk Web Wrapper</h1>
+
+<p>
+	This is a simple web application which executes <code>pdftk ${source-file} output ${destination-file}</code> for the uploaded PDF file. URL of the result file will be available of the resulting JSON.
+</p>
+<p>
+	(Japanese)
+	アップロードしたPDFファイルに対して <code>pdftk ${source-file} output ${destination-file}</code> のコマンドを実行するだけのシンプルなWebアプリです。処理されたPDFへのURLは、結果のJSONに含まれます。
+</p>
+
+<h2>Upload Form</h2>
+<form action="./upload.php" enctype="multipart/form-data" method="POST">
+	<div>
+		<input id="fileupload" type="file" name="files" data-url="./upload.php">
+	</div>
+	<div>
+		<input type="submit"/>
+	</div>
+</form>
+
+<hr/>
+Copyright (c) 2016 by <a href="http://www.tmotooka.com/" target="_blank">T.Motooka</a>. All Rights Reserved.
+
+</body>
+</html>
